@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Oswald', sans-serif;
+
+  --color-green-50: #EFFDF5;
+  --color-green-100: #D9FBE8;
+  --color-green-200: #B3F5D1;
+  --color-green-300: #75EDAE;
+  --color-green-400: #00DC82;
+  --color-green-500: #00C16A;
+  --color-green-600: #00A155;
+  --color-green-700: #007F45;
+  --color-green-800: #016538;
+  --color-green-900: #0A5331;
+  --color-green-950: #052E16;
+
+  /* Palet Brand (Teal/Cyan) */
+  --color-brand-50: #f2f7f7;
+  --color-brand-100: #e1eeef;
+  --color-brand-200: #c5dfe1;
+  --color-brand-300: #9bc8cb;
+  --color-brand-400: #76abae;
+  --color-brand-500: #559094;
+  --color-brand-600: #417579;
+  --color-brand-700: #366064;
+  --color-brand-800: #2e5053;
+  --color-brand-900: #294446;
+  --color-brand-950: #16282a;
+
+  /* Palet Mint (Hijau) */
+  --color-mint-50: #f0f9f7;
+  --color-mint-100: #daf1eb;
+  --color-mint-200: #b8e3d8;
+  --color-mint-300: #8bcfbf;
+  --color-mint-400: #55ad9b;
+  --color-mint-500: #3a9280;
+  --color-mint-600: #2c7567;
+  --color-mint-700: #265e53;
+  --color-mint-800: #214c44;
+  --color-mint-900: #1d403a;
+  --color-mint-950: #0e2421;
+
+  /* Background Custom */
+  --color-surface-light: #EEEEEE;
+  --color-surface-dark: #31363F;
+  --color-surface-darker: #222831;
+}
