@@ -47,3 +47,8 @@
   --color-surface-dark: #31363F;
   --color-surface-darker: #222831;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
