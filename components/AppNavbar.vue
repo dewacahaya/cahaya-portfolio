@@ -144,7 +144,7 @@ const links = [
                 <UButton color="neutral" variant="ghost" @click="close">
                   <UIcon
                     name="i-heroicons-x-mark-20-solid"
-                    class="w-8 h-8 text-gray-500 hover:text-brand-500 transition-colors"
+                    class="w-8 h-8 text-surface-darker dark:text-surface-light hover:text-brand-500 transition-colors"
                   />
                 </UButton>
               </div>

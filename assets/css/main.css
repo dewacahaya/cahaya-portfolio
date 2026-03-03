@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme static {
   --font-sans: 'Oswald', sans-serif;
 
@@ -51,4 +53,19 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface-light);
+    color: #111827;
+    /* Teks default gelap */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: var(--color-surface-darker);
+    color: #ffffff;
+    /* Teks default terang di mode gelap */
+  }
 }
