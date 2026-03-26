@@ -72,7 +72,7 @@ const projects = [
       </h2>
     </div>
     <UCarousel v-slot="{ item }" :items="projects" :ui="{ item: 'basis-full md:basis-1/2 lg:basis-1/3 snap-start' }"
-      class="w-full -ml-4" arrows indicators>
+      class="w-full -ml-4">
       <div class="pl-4 pb-12 h-full w-full flex">
 
         <AppCard
@@ -80,7 +80,8 @@ const projects = [
 
           <div class="relative w-full h-48 overflow-hidden bg-gray-100 dark:bg-surface-darker shrink-0">
             <img :src="item.image" :alt="item.title"
-              class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              loading="lazy">
 
             <div
               class="absolute top-4 left-4 bg-white/90 dark:bg-surface-darker/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-800 dark:text-white shadow-sm transition-colors duration-500">
@@ -89,13 +90,12 @@ const projects = [
 
             <NuxtLink :to="item.link" target="_blank"
               class="absolute top-4 right-4 bg-black/60 hover:bg-brand-500 backdrop-blur-md p-2 rounded-full text-white opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10 shadow-lg">
-              <UIcon name="i-heroicons-arrow-up-right" />
+              <UIcon name="i-heroicons-arrow-up-right" class="w-5 h-5" />
             </NuxtLink>
           </div>
 
           <div
             class="p-6 flex flex-col grow justify-between bg-white dark:bg-surface-dark transition-colors duration-500">
-
             <div>
               <h3
                 class="text-xl font-bold text-gray-900 dark:text-white mb-3 transition-colors duration-500 group-hover:text-brand-500 line-clamp-2">
